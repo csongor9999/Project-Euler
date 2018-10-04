@@ -9,10 +9,10 @@ int main () {
     long long int sum = 1;
     int i=3;
 
-    while (i<int(sqrt(largestPrimeNumber))+1 && sum!=largestPrimeNumber) {
+    while (i<sqrt(largestPrimeNumber)+1 && sum!=largestPrimeNumber) {
         int j=2;
         isPrime = true;
-        while (j<int(sqrt(i))+1 && isPrime==true) {
+        while (j<sqrt(i)+1 && isPrime==true) {
             if (i%j==0) {
                 isPrime = false;
             }
